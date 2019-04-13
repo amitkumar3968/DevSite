@@ -15,7 +15,7 @@ import Services from './services';
 
 import Contact from './contact';
 
-
+import ReactGA from 'react-ga';
 
 
 class Baseclass extends Component {
@@ -26,6 +26,13 @@ class Baseclass extends Component {
             userdata: userdata
         };
     }
+    componentDidMount() {
+        // super.componentDidMount();
+        // alert(userdata.Home.title);
+        ReactGA.initialize('UA-136327063-1');
+        ReactGA.pageview('/Home');
+    
+      }
 
 
     render() {

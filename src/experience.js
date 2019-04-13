@@ -1,10 +1,16 @@
 var moment = require('moment');
 import React, { Component } from 'react';
 import { deflate } from 'zlib';
+import ReactGA from 'react-ga';
 
 class Experience extends React.Component {
     constructor(props) {
         super(props);
+    }
+     componentDidMount() {
+
+        ReactGA.pageview('/Experience');
+
     }
 
     gettimeDuration(startingdate) {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
+import ReactGA from 'react-ga';
 
 const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -23,6 +24,11 @@ class Skills extends React.Component {
         // console.log(this.props.userdata);
     }
 
+    componentDidMount() {
+
+        ReactGA.pageview('/Skills');
+
+    }
     render() {
         return (
             <div>

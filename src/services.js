@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 class Services extends React.Component {
     constructor(props) {
         super(props);
+    }
+    componentDidMount() {
+
+        ReactGA.pageview('/Services');
+
     }
     render() {
         return (
