@@ -8,3 +8,44 @@ Source Code for my Dev site.
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6"
   }
+  
+  Docker -- info--
+  
+  Docker -- 4 Beginners
+ 
+https://docker-curriculum.com/
+
+
+1. install docker
+
+
+docker ps
+docker images  -> list of docker images.
+
+You can use the docker images command to see a list of all images on your system.
+The docker ps command shows you all containers that are currently running.
+
+docker ps -a
+
+$ docker run busybox -> run docker image named busybody on your system.
+
+Running the run command with the -it flags attaches us to an interactive tty in the container.
+
+exit running container by typing exit and enter. OR ctrd+d 
+
+images are like binaries, container is used to run/execute that image, saves local data in the container, and docker removes container data, when container is closed.
+
+docker container prune - delete all stopped containers
+
+also- docker rmi busybox  -> will remove image
+
+docker run --rm prakhar1989/static-site   -> --rm flag automatically removes the container when it exits
+Hit Ctrl+C to stop the container.
+
+
+
+docker run -d -P --name static-site prakhar1989/static-site
+In the above command, -d will detach our terminal, -P will publish all exposed ports to random ports and finally --name corresponds to a name we want to give. Now we can see the ports by running the docker port [CONTAINER] command
+
+
+docker stop static
