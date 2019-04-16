@@ -49,3 +49,42 @@ In the above command, -d will detach our terminal, -P will publish all exposed p
 
 
 docker stop static
+
+docker build -t image-name .
+docker run image-name
+
+docker images
+docker rmi imagenameorImageID
+
+docker container prune
+docker ps -a
+
+
+docker run -p 4000:8080 myapp
+
+
+
+
+
+redis,mongodb , mysql
+
+
+JS, python, clojure
+express , node js
+
+
+docker , aws
+
+
+Rust is the most loved programming language among our respondents, followed close behind by Python, the fastest-growing major language today.
+
+React.js and Vue.js are both the most loved and most wanted web frameworks by developers, 
+
+
+Globally, respondents who use Clojure, F#, Elixir, and Rust earn the highest salaries, with median salaries above $70,000 USD. There are regional variations in which languages are associated with the highest pay. Scala developers in the US are among the highest paid, while Clojure and Rust developers earn the most in India.
+
+
+engineering manager
+DevOps , site reliability
+
+
