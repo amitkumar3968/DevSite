@@ -77,3 +77,9 @@ engineering manager
 DevOps , site reliability
 
 
+docker stop container
+docker tag devsite amitkumar3968/devsite:latest
+docker login
+docker push devsite amitkumar3968/devsite:latest
+
+

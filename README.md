@@ -8,3 +8,13 @@ Source Code for my Dev site.
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6"
   }
+
+#Docker
+
+https://hub.docker.com/r/amitkumar3968/devsite
+
+Steps to run--
+
+    install docker
+    docker run -p 4000:8080 amitkumar3968/devsite
+    go to localhost:4000
