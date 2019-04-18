@@ -83,3 +83,55 @@ docker login
 docker push devsite amitkumar3968/devsite:latest
 
 
+#MONGO----------------
+
+loopback, meteor , laravel 
+
+
+mongo
+
+mongo shell - cli,
+mongo compass - gui ,
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/
+  
+Dwld Mongo binaries from home site
+mongorestore
+bsondump
+install_compass
+mongo
+mongod
+mongodump
+mongoexport
+mongofiles
+mongoimport
+mongoreplay
+mongos
+mongostat
+mongotop
+
+extract & paste in /usr/local/bin
+
+sudo mkdir -p /data/db
+chmod 777 /data/db
+mongod -> enter  - starts mongo server
+mongo   -> start mongo cli
+
+https://docs.mongodb.com/manual/mongo/
+
+mongo shell commands--
+db  - it shows current db
+show dbs - list all dis
+use local --- switch to local db.
+
+db.mycollection.insertOne({x:1});
+show collections
+db.inventory.find().pretty()
+
+db.inventory.find( { status: { $in: [ "A", "D" ] } } ) // finds A or D
+db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+
+
+
+
+
