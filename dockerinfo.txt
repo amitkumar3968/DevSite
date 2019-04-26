@@ -190,6 +190,42 @@ db.userscollections.update({_id:doc._id},{$set:{ "users.0.username" : "d"}})
 If your query includes inner documents, then use quotes for them. Also, use quotes for querying String values
 
 
+
+// need to check push -- below code not working
+db.userscollections.find({"users.username":"d"}).forEach(function(doc){
+ printjson(doc)
+})
+
+
+
+
+db.userscollections.find({"users.username":"d"}).forEach(function(doc){
+db.userscollections.update({_id:doc.id},{$push:{
+"doc.users":{
+ $each:[
+{
+  "username": "t",
+  "email": "t@email.com",
+  "phone": "t12132131",
+  "region": "IN",
+  "country": "IN",
+  "imageurl": "theimageurlt"
+}
+]
+}
+}})
+}
+)
+
+var mycursor = db.userscollections.find({"users.username":"d"})
+
+while(mycursor.hasNext()){
+printjson(mycursor.next());
+}
+
+
+
+
  
 
 
