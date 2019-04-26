@@ -131,6 +131,74 @@ db.inventory.find().pretty()
 db.inventory.find( { status: { $in: [ "A", "D" ] } } ) // finds A or D
 db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                Adding mongo shell test commands.
+----------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------
+
+> db.userscollections.find().pretty()
+
+> db.userscollections.insert({
+...   "users": [
+...     {
+...       "username": "username1",
+...       "email": "useremail1@email.com",
+...       "phone": "12132131",
+...       "region": "IN",
+...       "country": "IN",
+...       "imageurl": "theimageurl1"
+...     }
+...   ]
+... })
+
+db.userscollections.insert({
+...   "users": [
+...     {
+...       "username": "username2",
+...       "email": "useremail2@email.com",
+...       "phone": "12132132",
+...       "region": "IN",
+...       "country": "IN",
+...       "imageurl": "theimageurl2"
+...     }
+...   ]
+... })
+
+
+
+> db.userscollections.find({_id:ObjectId("5cc2dd2b7c63c8ee8a8a0b83")})
+> db.userscollections.find( {"users.username":"username"}).pretty()
+
+db.userscollections.update({"users.username":"username"},{$set:{"users.0.username":"testusername"}})
+
+var mycursor = db.userscollections.find({"users.username":"testusername"})
+
+while(mycursor.hasNext()){
+printjson(mycursor.next());
+}
+
+
+ 
+
+ 
+
+db.userscollections.find({"users.username":"username2"}).forEach(function(doc){
+db.userscollections.update({_id:doc._id},{$set:{ "users.0.username" : "d"}})
+})
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 
 
 
