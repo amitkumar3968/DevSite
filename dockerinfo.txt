@@ -187,6 +187,7 @@ db.userscollections.update({_id:doc._id},{$set:{ "users.0.username" : "d"}})
 })
 
 
+If your query includes inner documents, then use quotes for them. Also, use quotes for querying String values
 
 
  
