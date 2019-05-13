@@ -225,6 +225,82 @@ printjson(mycursor.next());
 
 
 
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+                                  Redux info----
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+createstacknavigator
+RN - architecture
+asyncstorage- blacklist, whitelist
+
+
+redux
+redux saga
+reducer
+
+callback hell
+callback pyramid of doom
+
+You could also just whitelist or blacklist specific reducers with redux persist as documented on their README: github.com/rt2zz/redux-persist
+
+RN launch date - march 2015
+3 yrs in RN
+topics-
+promise
+asyncstorage
+redux
+asyncstrorage with redux
+
+
+
+
+asyncstorage is RN API for client-side data persistence in the form of key-value pairs.
+AsyncStorage API is asynchronous, so each of its methods returns a Promise object and in case of error, an Error object.
+
+A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+
+A Promise is in one of these states:
+
+    pending: initial state, neither fulfilled nor rejected.
+    fulfilled: meaning that the operation completed successfully.
+    rejected: meaning that the operation failed.
+
+A promise is said to be settled if it is either fulfilled or rejected, but not pending.
+
+One of the great things about using promises is chaining.
+
+Redux --
+A predictable state container for JavaScript apps.
+
+Redux is framework agnostic.
+
+A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
+
+reducers produce the state of your application.
+
+Reducers are just pure functions that take the previous state and an action, and return the next state.
+A pure function is one that returns the exact same output for the given input.
+
+
+The only way to change the state is to emit an action, an object describing what happened.
+
+Three Principles
+
+Redux can be described in three fundamental principles:
+Single source of truth
+State is read-only
+Changes are made with pure functions
+
+
+nokia phone repair
+ac repair
+
+
+
+
 
  
 
