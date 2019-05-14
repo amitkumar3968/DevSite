@@ -295,8 +295,8 @@ State is read-only
 Changes are made with pure functions
 
 
-nokia phone repair
-ac repair
+https://medium.com/kuralabs-engineering/reactive-core-architecture-for-react-native-and-react-applications-d590daf4ef8a
+
 
 
 
