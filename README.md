@@ -23,3 +23,5 @@ Steps to run--
 
 
 https://developers.google.com/web/tools/lighthouse/
+
+https://affiliate-program.amazon.in/home
