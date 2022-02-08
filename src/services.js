@@ -12,25 +12,33 @@ class Services extends React.Component {
     }
     render() {
         return (
-            <div style={{ marginTop: 80 }}>
-                Services I Provide - 
-                <div style={{marginTop:20, marginLeft:20}}>
-                {
-                    this.props.userdata.map(
-                        (value, index) => {
-                            return (
+            <div style={{ marginLeft: 40 }}>
+                Services I Provide -
+                <div style={{ marginTop: 0, marginLeft: 0 }}>
+                    <ul>
+                        {
+                            this.props.userdata.Services.map(
+                                (value, index) => {
+                                    return (
 
-                                <li key={index}>
-                                    <u>
-                                        <i>{value}
-                                        </i>
-                                    </u>
-                                </li>
+                                        <li key={index}>
+                                            <u>
+                                                <i>{value}
+                                                </i>
+                                            </u>
+                                        </li>
+                                    )
+                                }
                             )
                         }
-                    )
-                }
+                    </ul>
                 </div>
+                <br />
+                <div>
+                    D3 Demo/POC--
+                    <a href={this.props.userdata.DemoWork}>Interactive Family Tree</a>
+                </div>
+
             </div>
         )
     }

@@ -1,7 +1,7 @@
 {
   "Home": {
     "title": "Mobile Developer(iOS) + 🚣MERN",
-    "Subtitle": "Started Software Development as 🍎 iOS Developer, Hybrid App(React Native) and Now Going Towards 🕸️ Web Development",
+    "Subtitle": "Started Software Development as 🍎 iOS Developer ->  Hybrid App(React Native) and Now Going Towards 🕸️ Web Development",
     "UserName": "Amit kumar"
   },
   "Skills": {
@@ -52,44 +52,75 @@
   },
   "WorkExperience": {
     "firstJobStartingdate": "01/06/2011",
-    "firstCompanydetails": {
-      "companyname": "Cyberlinks Technologies",
-      "companyStayedTime": "2.5 yrs",
-      "rolesandResponsibilty": [
-        "Ability to ramp up quickly on new technologies and adopt solution from within the company or from the Open Source community.",
-        "Customer focused, adapts well in a fast-changing environment.",
-        "Knowledge of / experience with unit testing, mocking and dependency injection frameworks.",
-        "Knowledge of / experience with application design patterns (MVC/MVVM, etc.).",
-        "Work closely with the design and product teams to implement and polish design mocks on a precise, detailed level."
-      ],
-      "Position": "Senior Software Engineer",
-      "JoiningYear": "June 2011 - Oct 2013"
-    },
-    "secondCompanydetails": {
-      "companyname": "HyTech Professionals India Pvt Ltd",
-      "companyStayedTime": "2.5 yrs",
-      "rolesandResponsibilty": [
-        "Ensure the performance, quality, and responsiveness of applications.",
-        "Collaborate with a team to define, design, and ship new features.",
-        "Identify and correct bottlenecks and fix bugs.",
-        "Help maintain code quality, organization, and automatization."
-      ],
-      "Position": "Senior Software Engineer",
-      "JoiningYear": "Oct 2013 - Oct 2015"
-    },
-    "currentCompanydetails": {
-      "companyname": "HCL Technologies",
-      "companyStayedTime": "3.3 yrs",
-      "rolesandResponsibilty": [
-        "Collaborate with cross-functional teams to define, design, and ship new features.",
-        "Unit-test code for robustness, including edge cases, usability, and general reliability.",
-        "Work on bug fixing and improving application performance.",
-        "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
-        "Interact with clients regarding the features and functionality to be developed and deliver the progress report to the client and project manager."
-      ],
-      "Position": "Lead Engineer",
-      "JoiningYear": "Oct 2015 - Present"
-    }
+    "CompaniesList":[
+      {
+        "companyname": "Cyberlinks Technologies",
+        "companyStayedTime": "2.5 yrs",
+        "rolesandResponsibilty": [
+          "Ability to ramp up quickly on new technologies and adopt solution from within the company or from the Open Source community.",
+          "Customer focused, adapts well in a fast-changing environment.",
+          "Knowledge of / experience with unit testing, mocking and dependency injection frameworks.",
+          "Knowledge of / experience with application design patterns (MVC/MVVM, etc.).",
+          "Work closely with the design and product teams to implement and polish design mocks on a precise, detailed level."
+        ],
+        "Position": "Senior Software Engineer",
+        "JoiningYear": "June 2011 - Oct 2013"
+      },
+      {
+        "companyname": "HyTech Professionals India Pvt Ltd",
+        "companyStayedTime": "2.5 yrs",
+        "rolesandResponsibilty": [
+          "Ensure the performance, quality, and responsiveness of applications.",
+          "Collaborate with a team to define, design, and ship new features.",
+          "Identify and correct bottlenecks and fix bugs.",
+          "Help maintain code quality, organization, and automatization."
+        ],
+        "Position": "Senior Software Engineer",
+        "JoiningYear": "Oct 2013 - Oct 2015"
+      },
+      {
+        "companyname": "HCL Technologies",
+        "companyStayedTime": "3.3 yrs",
+        "rolesandResponsibilty": [
+          "Collaborate with cross-functional teams to define, design, and ship new features.",
+          "Unit-test code for robustness, including edge cases, usability, and general reliability.",
+          "Work on bug fixing and improving application performance.",
+          "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+          "Interact with clients regarding the features and functionality to be developed and deliver the progress report to the client and project manager."
+        ],
+        "Position": "Lead Engineer",
+        "JoiningYear": "Oct 2015 - Feb 2021"
+      },
+      {
+        "companyname": "TCS",
+        "companyStayedTime": "11 Months",
+        "rolesandResponsibilty": [
+          "Worked with a leading Healthcare Company",
+          "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+          "Start from scratch Reporting Apps to be used by internal clients"
+        ],
+        "Position": "Associate Consultant",
+        "JoiningYear": "March 2021 - Jan 2022"
+      },
+      {
+        "companyname": "CTS",
+        "companyStayedTime": "Present",
+        "rolesandResponsibilty": [
+          "Continuously discover, evaluate, and implement new technologies to maximize development efficiency."
+        ],
+        "Position": "Sr. Associate",
+        "JoiningYear": "Feb 2022 - Present"
+      }
+    ],
+     
+    "rolesandResponsibilty": [
+      "Worked with a leading Healthcare Company.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Unit-test code for robustness, including edge cases, usability, and general reliability.",
+      "Work on bug fixing and improving application performance.",
+      "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+      "Interact with clients regarding the features and functionality to be developed and deliver the progress report to the client and project manager."
+    ]
   },
   "Contact": {
     "title": "Connect me via --",
@@ -107,6 +138,8 @@
     "Make websites using React JS.",
     "Free LIC Advisor.",
     "Mobile Development training.",
-    "Free Tech Consulting For Start Ups."
-  ]
+    "Free Tech Consulting For Start Ups.",
+    "Love and Appreciate Open Source Community, always try to contribute as much as i can towards Open Source."
+  ],
+  "DemoWork": "https://jovial-knuth-2eb226.netlify.app/"
 }

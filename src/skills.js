@@ -32,7 +32,7 @@ class Skills extends React.Component {
     render() {
         return (
             <div>
-                <div style={{ backgroundColor: '#fff', width: '98vw', height: '90vh', marginTop: 80 }}>
+                <div style={{ backgroundColor: '#fff', width: '98vw', height: '90vh', marginTop: 0 }}>
                     <Doughnut data={this.props.userdata} options={{ maintainAspectRatio: false }} />
                 </div>
 

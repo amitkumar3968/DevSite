@@ -86,12 +86,12 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div style={{ marginTop: 80, display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ marginTop: 0, display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <AppBar position="relative" color="default" style={{ width: '90vw' }}
                 >
                     <Toolbar
                         style={{
-                            flex: 1,
+                            // flex: 1,
                             justifyContent: 'space-between',
                             flexDirection: 'row',
                             alignItems: 'center'
@@ -104,32 +104,32 @@ class Contact extends React.Component {
                         <div>
                             <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(1) }} >
                                 GitHub
-                        </Button>
+                            </Button>
 
 
                             <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(2) }} >
                                 LinkedIN
-                        </Button>
+                            </Button>
 
                             <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(3) }} >
                                 Mail
-                        </Button>
-                            <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(4) }} >
+                            </Button>
+                            {/* <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(4) }} >
                                 Code
-                        </Button>
+                            </Button> */}
 
                             <Button style={{ margin: 10, fontSize: 10 }} variant="contained" color="default" onClick={() => { this.openlink(5) }} >
                                 Dwld CV
-                        </Button>
+                            </Button>
                         </div>
 
 
                     </Toolbar>
                 </AppBar>
 
-                <Fab color="secondary" aria-label="Edit" style={{ margin: 20 }} onClick={() => { this.openlink(6) }} >
+                {/* <Fab color="secondary" aria-label="Edit" style={{ margin: 20 }} onClick={() => { this.openlink(6) }} >
                     <Icon>edit_icon</Icon>
-                </Fab>
+                </Fab> */}
 
 
             </div>

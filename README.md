@@ -20,3 +20,6 @@ Steps to run--
     install docker
     docker run -p 4000:8080 amitkumar3968/devsite
     go to localhost:4000
+
+
+https://developers.google.com/web/tools/lighthouse/

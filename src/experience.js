@@ -7,7 +7,7 @@ class Experience extends React.Component {
     constructor(props) {
         super(props);
     }
-     componentDidMount() {
+    componentDidMount() {
 
         ReactGA.pageview('/Experience');
 
@@ -39,26 +39,36 @@ class Experience extends React.Component {
     render() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' ,marginLeft:40 }}>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginLeft: 40 }}>
                     <div style={{
-                        marginTop: 80, flexDirection: 'column',
+                        marginTop: 40, flexDirection: 'column',
                         display: 'flex', backgroundColor: '#fff'
                     }}>
                         Total Work Experience - {this.gettimeDuration(this.props.userdata.firstJobStartingdate)}
                         <div color='#789ff3'> Relevant Experience -
-                        <ul>
+                            <ul>
                                 <li>iOS - 6+ yrs</li>
                                 <li>React Native  - 1+ yrs</li>
-                                <li>React JS  - 1+ yrs</li>
+                                <li>React JS  - 3+ yrs</li>
                             </ul>
                         </div>
                     </div>
 
                     <div style={{
-                        margin: 80, flexDirection: 'column',
+                        margin: 40, flexDirection: 'column',
                         display: 'flex'
                     }}> Companies List  -
-                        <div>
+                        <ul>
+                            {this.props.userdata.CompaniesList.reverse().map((singleCompany, index) => {
+                                return <li key={index}>
+                                    <u>
+                                        {singleCompany.companyname} </u> -
+                                    <i>{singleCompany.JoiningYear} </i>
+                                </li>
+                            })}
+                        </ul>
+
+                        {/* <div>
                             <ul>
                                 <li><u>{this.props.userdata.currentCompanydetails.companyname}</u> -
                                         <i>{this.props.userdata.currentCompanydetails.JoiningYear} </i>
@@ -73,20 +83,22 @@ class Experience extends React.Component {
                                 </li>
 
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
-                <div style={{marginLeft:40}}>
+                <div style={{ marginLeft: 40 }}>
                     Roles & Responsibilities-
+                    <ul>
                     {
-                        this.props.userdata.currentCompanydetails.rolesandResponsibilty.map((value, index) => {
+                        this.props.userdata.rolesandResponsibilty.map((value, index) => {
                             return (
                                 <li key={index}>{value}
                                 </li>
                             )
                         })
                     }
+                    </ul>
                 </div>
 
 
